@@ -1,0 +1,36 @@
+{
+  "name": "ng2-emoji",
+  "version": "1.0.0",
+  "description": "Angular2-TypeScript emoticons library",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "tsc"
+  },
+  "keywords": [
+    "angular2",
+    "ng2",
+    "angular",
+    "emoji",
+    "emoticon",
+    "ionic"
+  ],
+  "typings": "./ng2-emoji.d.ts",
+  "author": "Ahsan Ayaz <ahsan.ubitian@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/core-js": "^0.9.34",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp.spritesmith": "^6.2.1",
+    "merge-stream": "^1.0.0",
+    "typescript": "^2.0.3",
+    "vinyl-buffer": "^1.0.0"
+  },
+  "dependencies": {
+    "@angular/core": "^2.0.2",
+    "es6-shim": "^0.35.1",
+    "rxjs": "^5.0.0-beta.12",
+    "zone.js": "^0.6.25"
+  }
+}
