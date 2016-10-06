@@ -4,7 +4,7 @@ import {Ng2EmojiService} from './ng2-emoji.service';
   name: 'emojis'
 })
 @Injectable()
-export class Ng2EmojisPipe {
+export class Ng2EmojiPipe {
   /*
     Takes a value and makes it lowercase.
    */
