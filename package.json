@@ -14,6 +14,14 @@
     "emoticon",
     "ionic"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AhsanAyaz/ng2-emoji"
+  },
+  "bugs": {
+    "url": "https://github.com/AhsanAyaz/ng2-emoji/issues"
+  },
+  "homepage": "https://github.com/AhsanAyaz/ng2-emoji",
   "typings": "./ng2-emoji.d.ts",
   "author": "Ahsan Ayaz <ahsan.ubitian@gmail.com>",
   "license": "MIT",
