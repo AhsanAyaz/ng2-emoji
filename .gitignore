@@ -1,10 +1,23 @@
-# Node generated files
-node_modules
+# Node
+node_modules/*
 npm-debug.log
-# OS generated files
-Thumbs.db
-.DS_Store
-# Ignored files
+
+# TypeScript
 *.js
 *.map
 *.d.ts
+
+# JetBrains
+.idea
+.project
+.settings
+.idea/*
+*.iml
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Mac
+.DS_Store
+**/.DS_Store

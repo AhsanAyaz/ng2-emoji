@@ -2,6 +2,10 @@ import {Injectable} from '@angular/core';
 
 @Injectable()
 export class Ng2EmojiService {
+
+  constructor() {
+
+  }
   public static emojis: Array<string> = [
             "bowtie", "smile", "laughing", "blush", "smiley", "relaxed",
             "smirk", "heart_eyes", "kissing_heart", "kissing_closed_eyes", "flushed",
@@ -165,9 +169,5 @@ export class Ng2EmojiService {
             "small_blue_diamond", "small_orange_diamond", "small_red_triangle",
             "small_red_triangle_down", "shipit"
         ];
-
         public static emojisRegex = new RegExp(":(" + Ng2EmojiService.emojis.join("|") + "):", "g");
-
-  constructor() {}
 }
-
