@@ -1,6 +1,6 @@
 {
   "name": "ng2-emoji",
-  "version": "0.1.5",
+  "version": "0.1.8",
   "scripts": {
     "lint": "tslint src/**/*.ts",
     "test": "tsc && karma start",

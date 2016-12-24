@@ -8,15 +8,18 @@ To install this library, run:
 $ npm install ng2-emoji --save
 ```
 
-## Consuming your library
+## Usage
 
-Once you have published your library to npm, you can import your library in any Angular application by running:
+`VERY IMPORTANT`
+In one of your css/scss files. include these styles:
 
-```bash
-$ npm install ng2-emoji
+```css
+.emoji{
+    display:inline-block;
+}
 ```
 
-and then from your Angular `AppModule`:
+In your Angular `AppModule`:
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -43,8 +46,39 @@ import { Ng2EmojiModule } from 'ng2-emoji';
 export class AppModule { }
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
+In your `index.html`:
+```xml
+<link href="./node_modules/ng2-emoji/dist/css/ng2-emoji.css" rel="stylesheet">
+```
+
+In your component where you want to use `ng2-emoji`, just use:
+```xml
+ <div class="message-container" [innerHTML]="myMessageString | emojis">
+ </div>
+```
+where the model `myMessageString` inside your `@Component` will be:
+
+```typescript
+...
+export class MyComponent {
+    public messageString: string = "";
+    constructor() {
+        this.messageString = "Hello, how are you? :smile:";
+    }
+}
+```
+
 ## Development
+
+Clone the repository:
+```
+git clone https://github.com/AhsanAyaz/ng2-device-detector
+```
+
+Install dependencies
+```
+npm install
+```
 
 To generate all `*.js`, `*.js.map` and `*.d.ts` files:
 
