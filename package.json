@@ -1,6 +1,6 @@
 {
   "name": "ng2-emoji",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "scripts": {
     "build": "./build.sh",
     "build:watch": "node ./watch.js",
