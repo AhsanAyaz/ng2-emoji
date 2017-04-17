@@ -38,7 +38,7 @@ import { Ng2EmojiModule } from 'ng2-emoji';
     BrowserModule,
 
     // Include the awesome
-    Ng2EmojiModule
+    Ng2EmojiModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -48,7 +48,7 @@ export class AppModule { }
 
 In your `index.html`:
 ```xml
-<link href="./node_modules/ng2-emoji/dist/css/ng2-emoji.css" rel="stylesheet">
+<link href="./node_modules/ng2-emoji/css/ng2-emoji.css" rel="stylesheet">
 ```
 
 In your component where you want to use `ng2-emoji`, just use:
@@ -61,9 +61,9 @@ where the model `myMessageString` inside your `@Component` will be:
 ```typescript
 ...
 export class MyComponent {
-    public messageString: string = "";
+    public messageString: String = "";
     constructor() {
-        this.messageString = "Hello, how are you? :smile:";
+        this.myMessageString = 'Hello, how are you? :smile: It was fun at the bowling game the other day :joy:';
     }
 }
 ```
@@ -72,7 +72,7 @@ export class MyComponent {
 
 Clone the repository:
 ```
-git clone https://github.com/AhsanAyaz/ng2-device-detector
+git clone https://github.com/AhsanAyaz/ng2-emoji
 ```
 
 Install dependencies
@@ -80,17 +80,25 @@ Install dependencies
 npm install
 ```
 
-To generate all `*.js`, `*.js.map` and `*.d.ts` files:
+To build the library:
 
 ```bash
-$ npm run tsc
+npm run build
+```
+
+To generate the spritesheet :
+
+```bash
+gulp sprite
 ```
 
 To lint all `*.ts` files:
 
 ```bash
-$ npm run lint
+npm run lint
 ```
+
+
 
 ## License
 

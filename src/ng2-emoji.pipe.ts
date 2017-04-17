@@ -8,7 +8,7 @@ export class Ng2EmojiPipe implements PipeTransform{
   transform(value: string, args: any[]) {
     value = value + ''; // make sure it's a string
     return value.replace(Ng2EmojiService.emojisRegex, function (match, text) {
-        return "<i class=\"emoji icon-ng2_em_" + text + "\" title=\":" + text + ":\" style=\"display:inline-block;\"></i>";
+        return `<i class="emoji icon-ng2_em_${text}" title=":${text}:" style="display:inline-block;"></i>`;
     });
   }
 }

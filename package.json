@@ -2,12 +2,10 @@
   "name": "ng2-emoji",
   "version": "0.1.8",
   "scripts": {
-    "lint": "tslint src/**/*.ts",
-    "test": "tsc && karma start",
-    "postinstall": "typings install",
-    "prepublish": "tsc",
-    "tsc": "tsc",
-    "typings": "typings"
+    "build": "./build.sh",
+    "build:watch": "node ./watch.js",
+    "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
+    "test": "tsc && karma start"
   },
   "repository": {
     "type": "git",
@@ -18,38 +16,49 @@
     "email": "ahsan.ubitian@gmail.com"
   },
   "keywords": [
-    "angular2",
-    "ng2",
-    "angular",
-    "emoji",
-    "emoticon",
-    "ionic"
+    "angular"
   ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/AhsanAyaz/ng2-emoji/issues"
   },
-  "main": "./dist/index.js",
-  "typings": "./dist/index.d.ts",
-  "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-csso": "^2.0.0",
-    "gulp-imagemin": "^3.0.3",
-    "gulp.spritesmith": "^6.2.1",
-    "merge-stream": "^1.0.0",
-    "vinyl-buffer": "^1.0.0"
-  },
   "devDependencies": {
-    "@angular/core": "^2.0.0",
-    "@angular/common": "^2.0.0",
-    "codelyzer": "^0.0.28",
-    "rxjs": "5.0.0-beta.12",
-    "tslint": "^3.15.1",
-    "typescript": "2.0.2",
-    "typings":"^1.0.4",
-    "zone.js": "0.6.23"
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@types/jasmine": "2.5.38",
+    "@types/node": "~6.0.60",
+    "codelyzer": "~2.0.0",
+    "core-js": "^2.4.1",
+    "jasmine-core": "~2.5.2",
+    "jasmine-spec-reporter": "~3.2.0",
+    "karma": "~1.4.1",
+    "karma-chrome-launcher": "~2.0.0",
+    "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^0.2.0",
+    "karma-jasmine": "~1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "node-watch": "^0.5.2",
+    "protractor": "~5.1.0",
+    "rollup": "^0.41.6",
+    "rxjs": "^5.1.0",
+    "ts-node": "~2.0.0",
+    "tslint": "~4.5.0",
+    "typescript": "~2.2.0",
+    "zone.js": "^0.8.4"
   },
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-imagemin": "^3.2.0",
+    "gulp.spritesmith": "^6.4.0",
+    "merge-stream": "^1.0.1",
+    "vinyl-buffer": "^1.0.0"
   }
 }
