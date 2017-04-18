@@ -51,6 +51,19 @@ In your `index.html`:
 <link href="./node_modules/ng2-emoji/css/ng2-emoji.css" rel="stylesheet">
 ```
 
+OR if using angular-cli.json, use:
+```json
+ "apps": [
+    {
+      ...
+      "styles": [
+        "styles.css",
+        "../node_modules/ng2-emoji/css/ng2-emoji.css"
+      ],
+      ...
+  ]
+```
+
 In your component where you want to use `ng2-emoji`, just use:
 ```xml
  <div class="message-container" [innerHTML]="myMessageString | emojis">
