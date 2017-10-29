@@ -7,8 +7,8 @@ describe('example-emoji App', () => {
     page = new ExampleEmojiPage();
   });
 
-  it('should display welcome message', () => {
+  it('should show 869 emoji cards', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getEmojiElementsCount()).toBe(869);
   });
 });

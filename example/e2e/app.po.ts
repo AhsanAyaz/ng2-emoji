@@ -8,4 +8,8 @@ export class ExampleEmojiPage {
   getParagraphText() {
     return element(by.css('app-root h1')).getText();
   }
+
+  getEmojiElementsCount() {
+    return element.all(by.css('app-home .container .card')).count();
+  }
 }

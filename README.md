@@ -1,5 +1,7 @@
 # ng2-emoji
 
+![image](https://travis-ci.org/AhsanAyaz/ng2-emoji.svg?branch=master)
+
 ## Installation
 
 To install this library, run:
@@ -7,6 +9,10 @@ To install this library, run:
 ```bash
 $ npm install ng2-emoji --save
 ```
+
+# Demo Example
+See the live example (Angular4 project) [here](https://ahsanayaz.github.io/ng2-emoji/)
+
 
 ## Usage
 
@@ -111,6 +117,22 @@ To lint all `*.ts` files:
 npm run lint
 ```
 
+## Run example locally
+Perform the following steps to serve the Angular example locally.
+Navigate to [http://localhost:4200](http://localhost:4200) after that.
+
+```bash
+cd example
+npm install
+ng serve
+```
+
+## Contribution
+Feel free to contribute to this repo by:
+- Adding Examples
+- Resolving open issues
+
+Thanks to [Juan Carlos](https://github.com/juanpago) for the amazing Angular example
 
 
 ## License
