@@ -19,9 +19,11 @@ before_script:
 
 script: 
   - cd example
-  - ng test --watch false -cc
+  - npm i
+  - node_modules/.bin/ng test --watch false -cc
   - npm run e2e
   - ng build -bh "https://ahsanayaz.github.io/ng2-emoji/"
+  - cd ..
 
 deploy:
   provider: pages
