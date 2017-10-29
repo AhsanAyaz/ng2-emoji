@@ -1,0 +1,21 @@
+<br>
+<div class="container">
+    <div class="row">
+        <div class="card col-12">
+            <div class="card-body">
+                <div class="message-container" [innerHTML]="myMessageString | emojis">
+                </div>
+            </div>
+        </div>
+    </div>
+    <h4>List of emojis</h4>
+    <div class="row">
+        <div class="card col-6 col-md-3" *ngFor="let emoji of emojis">
+            <div class="card-body">
+                <div class="message-container" [innerHTML]="':'+emoji+':' | emojis">
+                </div>
+                <span>:{{ emoji }}:</span>
+            </div>
+        </div>
+    </div>
+</div>
